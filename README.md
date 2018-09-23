@@ -1,5 +1,6 @@
 # Lambda Bot Workshop
 
+🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖
 ## Introduction
 
 Lambda is an AWS service that allows you to run code without worrying about managing the infrastructure to host the backend code. You don't have to worry about provisioning or managing servers and you pay only for the compute time of when the code is triggered to run.
@@ -111,7 +112,7 @@ We're short on time, so we're going to go straight into the process of creating 
 }
   ```
 
-  As a result, we were able to parse the previous user message (which had the weather option that the user chose to look up information for) and the contact properties previously collected during the bot session (so in our case, the location that we want the weather info for).
+As a result, we were able to parse the previous user message (which had the weather option that the user chose to look up information for) and the contact properties previously collected during the bot session (so in our case, the location that we want the weather info for).
 
 ## Next Steps
 
@@ -126,3 +127,5 @@ Or create your own lambda bot!
 Or integrate a chatbot with lambda into your personal website!
 
 Potential public APIs you can use can be found here: https://github.com/toddmotto/public-apis
+
+🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖
