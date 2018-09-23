@@ -26,7 +26,7 @@ At HubSpot, we created our own wrapper service for integrating AWS Lambda with H
 4. Demo example Lambda chatbots
 5. Create and run code snippets on your own bots
 
-## Creating a New Portal
+<!-- ## Creating a New Portal (Did this in the beginning of the talk)
 
 1. Go to https://www.hubspot.com/products/get-started
 2. Click on "Get Started Free" for Marketing Hub
@@ -35,11 +35,11 @@ At HubSpot, we created our own wrapper service for integrating AWS Lambda with H
 4. Just select "1" for how many employees work at your company, and "Other" for job role
 5. Select "Yes" or "No" depending on if you are using a website that you have previously created
 6. If you are using a website that you have previously created, you will have to add the embed code into your website. Else, you can skip this step.
-    - This might turn out to be a pain, so feel free to go back a couple of steps and just create a made-up url for the purpose of this tutorial, and you can go back and hook up your own later
+    - This might turn out to be a pain, so feel free to go back a couple of steps and just create a made-up url for the purpose of this tutorial, and you can go back and hook up your own later -->
 
 ## Creating a New Chat Bot
 
-1. Go to "Conversations -> Inbox" in the top nav
+1. Go to "Conversations -> Inbox" in the top nav of the portal that you just created
 2. Click on "Connect to Chat"
 3. Keep the defaults of all of the settings, but name it to something else in the second to last step
     - On the last step, copy the embed code and put it on the page that you want it to exist on (if you are using a website that you had previously created or else you can still test your lambda bot without a web page)
