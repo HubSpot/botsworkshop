@@ -18,12 +18,12 @@ At HubSpot, we created our own wrapper service for integrating AWS Lambda with H
 2. [Benchling CRISPR Case Study](https://aws.amazon.com/solutions/case-studies/benchling/)
 3. [Creating AWS Lambda Function Through AWS Console ](https://medium.freecodecamp.org/going-serverless-how-to-run-your-first-aws-lambda-function-in-the-cloud-d866a9b51536)
 
-## Our Goal For Today
+## Our Agenda For Today
 
-1. Create a new portal
-2. Configure a basic chatbot to the page
+1. Create a new portal (already did this but if not: https://www.hubspot.com/products/get-started)
+2. Create and configure a basic chatbot in the portal
 3. Go through how HubSpot chatbots have Lambda implemented
-4. Demo example Lambda chatbots
+4. Demo example Lambda chatbot
 5. Create and run code snippets on your own bots
 
 <!-- ## Creating a New Portal (Did this in the beginning of the talk)
