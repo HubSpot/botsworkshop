@@ -110,4 +110,19 @@ We're short on time, so we're going to go straight into the process of creating 
   }
 }
   ```
+
   As a result, we were able to parse the previous user message (which had the weather option that the user chose to look up information for) and the contact properties previously collected during the bot session (so in our case, the location that we want the weather info for).
+
+## Next Steps
+
+Play around with incorporating these lambda functions in bots with these gists:
+
+1. [Cat fact bot](https://gist.github.com/yunhsincynthiachen/f0c91b5d78c0c23c51edf9b5b2318dba)
+2. [Trivia bot](https://github.com/MotionAI/nodejs-samples/blob/master/triviabot.js)
+    - NOTE: This is an example from MotionAI's implementation (MotionAI is a software company that develops and "trains" chatbots that HubSpot acquired a year ago), so try to incorporate this example into your own
+
+Or create your own lambda bot!
+
+Or integrate a chatbot with lambda into your personal website!
+
+Potential public APIs you can use can be found here: https://github.com/toddmotto/public-apis
