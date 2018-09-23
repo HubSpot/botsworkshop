@@ -109,10 +109,9 @@ We're short on time, so we're going to go straight into the process of creating 
       }
     }
   }
-}
   ```
 
-As a result, we were able to parse the previous user message (which had the weather option that the user chose to look up information for) and the contact properties previously collected during the bot session (so in our case, the location that we want the weather info for).
+  As a result, we were able to parse the previous user message (which had the weather option that the user chose to look up information for) and the contact properties previously collected during the bot session (so in our case, the location that we want the weather info for).
 
 ## Next Steps
 
