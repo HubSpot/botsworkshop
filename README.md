@@ -64,14 +64,50 @@ We're short on time, so we're going to go straight into the process of creating 
 
   ![Alt text](weatherbotsecondmodule.png?raw=true "Get Weather Option")
 
-4. Add a "Run a code snippet" action (under "Automation" category), name it weather app, and paste in the code from my gist here:
+4. Add a "Run a code snippet" action (under "Automation" category), name it weather app, and paste in the code from my gist here: https://gist.github.com/yunhsincynthiachen/6b49d0e9c74816db9f238d0cad80c42a
+   - I would only replace everything above the commented out section
 
-5. NOTE: We can't do this step, given that our portals are free portals, but we have the concept of "If/then branches" that can change the flow of a conversation given how a visitor responds.
+5. Make a loop back to the "Get Weather Option" action by clicking on the lambda action, selecting the "If/then branch", and selecting "Weather Options" in the dropdown
+   - NOTE: Another feature that we can't currently use (given that our portals are free portals) are creating if/then branches
      - If we could, we would add a last "Send message from bot" action with quick replies that will ask the visitor if they are finished or would like to try another location
-
-     ![Alt text](ifthenbranchlook.png?raw=true "If/then Branch")
+       ![Alt text](ifthenbranchlook.png?raw=true "If/then Branch")
 
 6. Add any additional bot messages you please
 
 7. Test out your bot!
       - You can either do this by clicking "Test Bot" in the top right corner, or you can click the lambda action, select "Open in full page editor", and then click the bot icon in the left nav
+
+### A couple notes about the weather bot
+
+- Our lambda is very new:
+   - We currently do not have the ability to log errors in our UI 😅
+   - No concept of console logs
+   - "ctrl + s" doesn't work to save
+- I'm using the yahoo weather API: https://developer.yahoo.com/weather/
+- The event object that we pass into the lambda function (also noted in the comments of the code snippet):
+  ```
+  {
+  "userMessage": {                        //This is the message your visitor has send to your bot.
+    "message": "Sunset Time",
+    "quickReply": {
+      "quickReplies":[                    // An example of what a Quick Reply would look like.
+         {
+            "value":"Sunset Time",
+            "label":"Sunset Time"
+         }
+      ],
+  },
+  "session": {
+    "vid": 3803,                         // The visitorId - If you collect an email, or they are already a contact this will map to
+    "properties": {
+      "CONTACT": {                        // All the properties your bot has collected at the moment.
+        "city": {                    // For example if you had collected a HubSpot Contact property called.
+          "value": "Berlin",                // FavoriteColor it would be listed here.
+          "syncedAt": 1537724735696
+        }
+      }
+    }
+  }
+}
+  ```
+  As a result, we were able to parse the previous user message (which had the weather option that the user chose to look up information for) and the contact properties previously collected during the bot session (so in our case, the location that we want the weather info for).
