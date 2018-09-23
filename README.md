@@ -1,1 +1,77 @@
-# lambdaworkshop
+# Lambda Bot Workshop
+
+## Introduction
+
+Lambda is an AWS service that allows you to run code without worrying about managing the infrastructure to host the backend code. You don't have to worry about provisioning or managing servers and you pay only for the compute time of when the code is triggered to run.
+
+### How It Works
+![alt text](https://d1.awsstatic.com/product-marketing/Lambda/Diagrams/product-page-diagram_Lambda-HowItWorks.68a0bcacfcf46fccf04b97f16b686ea44494303f.png "Lambda Process Flow")
+
+### Our Work With Lambda
+At HubSpot, we created our own wrapper service for integrating AWS Lambda with HubSpot. In the chat bot use case, we allow users to upload code snippets, we do all of the interaction with AWS lambda, so that when the time comes in a bot session for a snippet to run, our service triggers the code.
+
+
+
+### Resources on lambda:
+1. [AWS Lambda: How it Works](https://aws.amazon.com/lambda/)
+2. [Benchling CRISPR Case Study](https://aws.amazon.com/solutions/case-studies/benchling/)
+3. [Creating AWS Lambda Function Through AWS Console ](https://medium.freecodecamp.org/going-serverless-how-to-run-your-first-aws-lambda-function-in-the-cloud-d866a9b51536)
+
+## Our Goal For Today
+
+1. Create a new portal
+2. Configure a basic chatbot to the page
+3. Go through how HubSpot chatbots have Lambda implemented
+4. Demo example Lambda chatbots
+5. Create and run code snippets on your own bots
+
+## Creating a New Portal
+
+1. Go to https://www.hubspot.com/products/get-started
+2. Click on "Get Started Free" for Marketing Hub
+3. Create an account and input any webpage url you want that isn't taken
+    - You can hook up a personal website if you have one or just make up one that you want (you can always change this in the future)
+4. Just select "1" for how many employees work at your company, and "Other" for job role
+5. Select "Yes" or "No" depending on if you are using a website that you have previously created
+6. If you are using a website that you have previously created, you will have to add the embed code into your website. Else, you can skip this step.
+    - This might turn out to be a pain, so feel free to go back a couple of steps and just create a made-up url for the purpose of this tutorial, and you can go back and hook up your own later
+
+## Creating a New Chat Bot
+
+1. Go to "Conversations -> Inbox" in the top nav
+2. Click on "Connect to Chat"
+3. Keep the defaults of all of the settings, but name it to something else in the second to last step
+    - On the last step, copy the embed code and put it on the page that you want it to exist on (if you are using a website that you had previously created or else you can still test your lambda bot without a web page)
+4. Go to "Conversations -> Bots" in the top nav
+5. Click on "Create Bot"
+6. Choose the "Qualify Lead" option, create a name and then "Create Bot"
+7. Voila! You have created your first bot with the qualify lead template. Toggle your bot to be active in the top right corner and connect to the new targeted message configuration that you had just created. Now you can test your bot!
+    - Once you have tested your bot check out:
+        - "Conversations -> Inbox" in your nav to see the whole chat conversation
+        - "Contacts -> Contacts" in your nav to see the new contact that you had just created in your test
+
+## Transforming "Qualify Lead" Bot
+
+We're short on time, so we're going to go straight into the process of creating a lambda bot; however, feel free to create other bots and such on your own time outside of this workshop!
+
+1. Delete all of the actions (by doing "Options -> Delete action" on the cards) except the first "Get Name" action
+     - Another way to delete actions is by clicking on the action, and then the trash icon in the bottom right
+2. Change the "Get Name" action to a "Get Location" action:
+
+   ![Alt text](weatherbotfirstmodule.png?raw=true "Get Location")
+
+3. Add a "Send message from bot" action with quick replies, which will be the different weather information you can provide the visitor:
+
+  ![Alt text](weatherbotsecondmodule.png?raw=true "Get Weather Option")
+
+4. Add a "Run a code snippet" action (under "Automation" category), name it weather app, and paste in the code from my gist here:
+
+5. NOTE: We can't do this step, given that our portals are free portals, but we have the concept of "If/then branches" that can change the flow of a conversation given how a visitor responds.
+     - If we could, we would add a last "Send message from bot" action with quick replies that will ask the visitor if they are finished or would like to try another location
+
+     ![Alt text](ifthenbranchlook.png?raw=true "If/then Branch")
+
+6. Add any additional bot messages you please
+
+7. Test out your bot!
+      - You can either do this by clicking "Test Bot" in the top right corner, or you can click the lambda action, select "Open in full page editor", and then click the bot icon in the left nav
