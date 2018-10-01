@@ -75,14 +75,14 @@ We're short on time, so we're going to go straight into the process of creating 
 
    ![Alt text](fulleditorview.png?raw=true "Get Location")
 
-5. Make a loop back to the "Get Weather Option" action by clicking on the lambda action, selecting the "If/then branch", and selecting "Weather Options" in the dropdown
+6. Make a loop back to the "Get Weather Option" action by clicking on the lambda action, selecting the "If/then branch", and selecting "Weather Options" in the dropdown
    - NOTE: Another feature that we can't currently use (given that our portals are free portals) are creating if/then branches
      - If we could, we would add a last "Send message from bot" action with quick replies that will ask the visitor if they are finished or would like to try another location
        ![Alt text](ifthenbranchlook.png?raw=true "If/then Branch")
 
-6. Add any additional bot messages you please
+7. Add any additional bot messages you please
 
-7. Test out your bot!
+8. Test out your bot!
       - You can either do this by clicking "Test Bot" in the top right corner, or you can click the lambda action, select "Open in full page editor", and then click the bot icon in the left nav
 
 ### A couple notes about the weather bot
