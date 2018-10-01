@@ -66,7 +66,14 @@ We're short on time, so we're going to go straight into the process of creating 
   ![Alt text](weatherbotsecondmodule.png?raw=true "Get Weather Option")
 
 4. Add a "Run a code snippet" action (under "Automation" category), name it weather app, and paste in the code from my gist here: https://gist.github.com/yunhsincynthiachen/6b49d0e9c74816db9f238d0cad80c42a
-   - I would only replace everything above the commented out section
+
+   ![Alt text](lambdaexample.png?raw=true "Get Location")
+
+5. Check out the full page editor view
+    - You can preview and test out your app logic and behavior
+    - Check out logs tab to see errors and success logs from when your code snippet runs
+
+   ![Alt text](fulleditorview.png?raw=true "Get Location")
 
 5. Make a loop back to the "Get Weather Option" action by clicking on the lambda action, selecting the "If/then branch", and selecting "Weather Options" in the dropdown
    - NOTE: Another feature that we can't currently use (given that our portals are free portals) are creating if/then branches
@@ -120,6 +127,8 @@ Play around with incorporating these lambda functions in bots with these gists:
 1. [Cat fact bot](https://gist.github.com/yunhsincynthiachen/f0c91b5d78c0c23c51edf9b5b2318dba)
 2. [Trivia bot](https://github.com/MotionAI/nodejs-samples/blob/master/triviabot.js)
     - NOTE: This is an example from MotionAI's implementation (MotionAI is a software company that develops and "trains" chatbots that HubSpot acquired a year ago), so try to incorporate this example into your own
+3. [Beer bot](https://gist.github.com/yunhsincynthiachen/0d5ec62a15085606962285a279d2672d)
+    - Created by Steve Rowell at HubSpot. This bot uses python which is not available to all at this time, but shows that you can collect information through quick replies in the lambda through creating a session and having states stored in a contact property. At HubSpot, we have beer on tap in a bunch of different locations, and using pubspot API, he created a way to output what's on tap. Super cool!
 
 Or create your own lambda bot!
 
