@@ -63,7 +63,7 @@ We're short on time, so we're going to go straight into the process of creating 
 
   ![Alt text](secondmodule.png?raw=true "Get Weather Option")
 
-4. Add a "Run a code snippet" action (under "Automation" category), name it weather app, and paste in the code from my gist here: https://gist.github.com/yunhsincynthiachen/6b49d0e9c74816db9f238d0cad80c42a
+4. Add a "Run a code snippet" action (under "Automation" category), name it weather app, and paste in the code from my gist ![here](weatherLambda.js)
 
    ![Alt text](thirdmodule.png?raw=true "Get Location")
 
