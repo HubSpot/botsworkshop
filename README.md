@@ -59,7 +59,7 @@ We're short on time, so we're going to go straight into the process of creating 
 
    ![Alt text](firstmodule.png?raw=true "Get Location")
 
-3. Add a "Ask Qeustion" action, choose "Custom question" and then add quick replies, which will be the different weather information you can provide the visitor:
+3. Add a "Ask Question" action, choose "Custom question" and then add quick replies, which will be the different weather information you can provide the visitor:
 
   ![Alt text](secondmodule.png?raw=true "Get Weather Option")
 
